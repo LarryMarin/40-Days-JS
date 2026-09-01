@@ -1,0 +1,39 @@
+/* Basic tab container spacing */
+.tabs {
+  font-family: sans-serif;
+  max-width: 400px;
+}
+
+.tab-headers {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+/* Default tab button style */
+.tab {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Highlight the active tab button */
+.tab.active {
+  background-color: #4a90e2;
+  color: white;
+  border-color: #4a90e2;
+  font-weight: bold;
+}
+
+/* Hide all tab content by default */
+.content {
+  display: none;
+  padding: 8px;
+}
+
+/* Show only the active tab's content */
+.content.active {
+  display: block;
+}
